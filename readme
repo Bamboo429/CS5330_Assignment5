@@ -1,0 +1,62 @@
+
+"""
+Created on Fri Apr  8 18:19:12 2022
+
+@author: chuhsuanlin
+"""
+
+Use two travel days for this project
+
+=== Project5 - Recognition using Deep Networks ===
+https://wiki.khoury.northeastern.edu/display/~chuhsuanlin/Project+5+%3A+Recognition+using+Deep+Networks
+
+
+#Built With
+Operating system: MacOS Monterey (12.1)
+IDE: Spyder
+Python 3.9.7
+
+#Installation and Setup
+1. Put all .py file in the smae folder
+
+# Files in the project
+1. train_mnist.py - build cnn model for mnist dataset and save the model
+2. test_mnist.py - test mnist model and own digits
+3. examine.py - analysis model
+4. greek_dataset.py - create greek letters dataset
+5. test_greek.py - test embedding greek dataset
+6. experiment.py - do some experiment for cnn model
+7. realtime_digits.py - real time digits classification
+
+
+#Instructions for running the executables
+1. For task 1A-1E : Run the train_mnist.py
+   (1) MNIST data will save in the folder {current folder}/data/
+   (2) Modify the save path and name of trained model in " PATH = './MNIST.pth' "
+
+2. For task 1F-1G : Run the test_mnist.py
+   (1) Modify folder path of test data in main function  test_folder = './data/digits/' 
+
+3. For task 2 : Run the examine.py
+
+4. For task 3A : Run the greek_dataset.py
+    (1) Modify folder path of train greek data in main function greek_train_folder = './data/greek/'
+    (2) Modify folder path of test greek data in main function greek_test_folder = './data/greek_test/'
+
+5. For task 3B-3E : Run the test_greek.py
+    
+6. For task 4 : Run the experiment.py
+    Modify exp variable in main function to choose differnet experiments
+    (1) exp = 1 : test kernel size
+    (2) exp = 2 : test number of convoultion layers
+    (3) exp = 3 : test dropout rate
+    (4) exp = 4 : test batch size
+
+7. Extension : 
+    (1) More greek letters and a KNN classifier : Run the test_greek.py
+    (2) Real-time digits classification : Run the realtime_digits.py
+        - Set up a camera, I use EpoCam here. https://www.elgato.com/en/epoccam
+        - Put the digits in the middle of camera, one at a time
+        - key 'q': end the program
+        - key 's': saving the result
+    
